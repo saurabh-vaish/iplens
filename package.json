@@ -4,7 +4,7 @@
   "description": "Fast, cross-platform CLI to inspect your network — public/private IPs, ISP, gateway, proxy/VPN detection. Works online and offline. Zero dependencies.",
   "main": "index.min.js",
   "bin": {
-    "iplens": "./index.min.js"
+    "iplens": "index.min.js"
   },
   "scripts": {
     "start": "node index.js",
