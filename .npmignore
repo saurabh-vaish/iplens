@@ -1,5 +1,6 @@
 # Development files
 test-stun.js
+index.js
 .github/
 .vscode/
 .idea/

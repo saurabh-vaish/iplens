@@ -2,13 +2,15 @@
   "name": "iplens",
   "version": "1.0.0",
   "description": "Fast, cross-platform CLI to inspect your network — public/private IPs, ISP, gateway, proxy/VPN detection. Works online and offline. Zero dependencies.",
-  "main": "index.js",
+  "main": "index.min.js",
   "bin": {
-    "iplens": "./index.js"
+    "iplens": "./index.min.js"
   },
   "scripts": {
     "start": "node index.js",
-    "test": "node test-stun.js"
+    "test": "node test-stun.js",
+    "build": "terser index.js -o index.min.js --compress --mangle --keep-fnames",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "cli",
@@ -40,7 +42,7 @@
     "node": ">=14.0.0"
   },
   "files": [
-    "index.js",
+    "index.min.js",
     "README.md",
     "LICENSE"
   ],
@@ -49,5 +51,8 @@
     "darwin",
     "linux",
     "win32"
-  ]
+  ],
+  "devDependencies": {
+    "terser": "^5.46.1"
+  }
 }
