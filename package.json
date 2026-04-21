@@ -1,0 +1,53 @@
+{
+  "name": "iplens",
+  "version": "1.0.0",
+  "description": "Fast, cross-platform CLI to inspect your network — public/private IPs, ISP, gateway, proxy/VPN detection. Works online and offline. Zero dependencies.",
+  "main": "index.js",
+  "bin": {
+    "iplens": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test-stun.js"
+  },
+  "keywords": [
+    "cli",
+    "network",
+    "ip",
+    "public-ip",
+    "private-ip",
+    "ipv6",
+    "stun",
+    "vpn-detection",
+    "proxy-detection",
+    "isp",
+    "gateway",
+    "diagnostics",
+    "networking",
+    "cross-platform"
+  ],
+  "author": "Saurabh Vaish",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saurabh-vaish/iplens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saurabh-vaish/iplens/issues"
+  },
+  "homepage": "https://github.com/saurabh-vaish/iplens/iplens#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "preferGlobal": true,
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ]
+}
